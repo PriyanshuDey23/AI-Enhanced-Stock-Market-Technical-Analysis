@@ -98,16 +98,16 @@ if "stock_data" in st.session_state:
     st.plotly_chart(fig)
 
     # Sidebar: Display stock statistics
-    st.sidebar.subheader("Stock Statistics 📈")
-    st.sidebar.write(f"**Max Price:** {data['Close'].max():.2f} USD")
-    st.sidebar.write(f"**Min Price:** {data['Close'].min():.2f} USD")
-    st.sidebar.write(f"**Mean Price:** {data['Close'].mean():.2f} USD")
-    st.sidebar.write(f"**Standard Deviation:** {data['Close'].std():.2f} USD")
+    st.sidebar.subheader("📈 **Stock Statistics**")
+    st.sidebar.success(f"📈 **Max Price:** {data['Close'].max():,.2f} USD")
+    st.sidebar.success(f"📉 **Min Price:** {data['Close'].min():,.2f} USD")
+    st.sidebar.success(f"📊 **Mean Price:** {data['Close'].mean():,.2f} USD")
+    st.sidebar.success(f"📈 **Standard Deviation:** {data['Close'].std():,.2f} USD")
 
     # Calculate and display growth
     growth = calculate_growth(data)
     if growth is not None:
-        st.sidebar.write(f"**Growth in Period:** {growth:.2f}%")
+        st.sidebar.success(f"🚀 **Growth in Period:** {growth:.2f}%")
     else:
         st.sidebar.write("**Growth in Period:** Data not available.")
 

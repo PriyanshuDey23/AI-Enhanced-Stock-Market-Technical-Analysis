@@ -1,6 +1,10 @@
 
 # AI-Powered Technical Stock Analysis
 
+![](1.png)
+![](2.png)
+![](3.png)
+
 This web app allows you to perform technical stock analysis using AI. The app fetches stock data, visualizes it with candlestick charts, and applies various technical indicators like the 20-Day SMA, 20-Day EMA, Bollinger Bands, and VWAP. The AI model analyzes the chart and provides a buy/hold/sell recommendation based on the technical indicators and patterns.
 
 ## Features

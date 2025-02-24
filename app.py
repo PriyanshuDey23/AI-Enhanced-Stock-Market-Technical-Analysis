@@ -123,7 +123,7 @@ if "stock_data" in st.session_state:
 
 
                 model = genai.GenerativeModel(
-                    model_name="gemini-1.5-flash",
+                    model_name="gemini-2.0-flash",
                     generation_config={
                         "temperature": 1,
                         "top_p": 0.95,
